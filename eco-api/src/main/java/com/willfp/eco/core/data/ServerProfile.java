@@ -10,6 +10,22 @@ import org.jetbrains.annotations.NotNull;
  */
 public interface ServerProfile extends Profile {
     /**
+     * Get the server ID.
+     *
+     * @return The server ID.
+     */
+    @NotNull
+    String getServerID();
+
+    /**
+     * Get the local server ID.
+     *
+     * @return The local server ID.
+     */
+    @NotNull
+    String getLocalServerID();
+
+    /**
      * Load the server profile.
      *
      * @return The profile.
